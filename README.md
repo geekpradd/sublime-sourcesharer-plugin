@@ -7,6 +7,11 @@ This is a Sublime Text Plugin to directly share source code on the Internet. Thi
 
 To install this Plugin, search for 'Source Sharer' on Package Control which is the preferred distribution network of Plugins for developers uing Sublime Text. You can install Package Control from this link: [http://sublime.wbond.net](http://sublime.wbond.net)
 
+Alternatively if you can't install Package Control for some reason, You can download [this zip](https://github.com/geekpradd/sublime-sourcesharer-plugin/archive/v1.1.0.zip) file and extract the content folder to C:\Users\USERNAME\AppData\Roaming\Sublime Text 3\Packages on Windows and reload Sublime Text 3 for the Plugin to start.
+
+For Mac OSX, navigate to /Users/{user}/Library/Application Support/Sublime Text 3/Packages and paste the contents of the zip there and reload Sublime Text 3.
+
+For Linux, navigate to ~/.config/sublime-text-3 from the terminal and paste the folder in the zip there and reload Sublime Text 3.
 ##Usage
 
 To use this plugin, use the shortcut key- Ctrl+Alt+S or Click on SourceSharer in the Menu Bar and click Share Source Code
