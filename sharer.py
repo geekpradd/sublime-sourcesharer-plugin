@@ -1,7 +1,11 @@
-import sublime, sublime_plugin,json
+import sublime, sublime_plugin,json,time,os
 import urllib.parse,threading
 import urllib.request
 
+class OpenCommand(sublime_plugin.TextCommand):
+  def run(self,edit):
+    file=os.path.join(os.path.dirname(__file__), "history.log")
+    self.view.window().open_file(file)
 class ShareCommand(sublime_plugin.TextCommand):
 
   def run(self, edit):
@@ -14,10 +18,17 @@ class ShareCommand(sublime_plugin.TextCommand):
       t= threading.Thread(target=self.rest)
       t.start()
   def rest(self):
-    link=self.contactAPI(self.locationParams,self.content)
 
+    link=self.contactAPI(self.locationParams,self.content)
+    self.saveHistory(self.view.file_name(),link)
     sublime.set_clipboard(link)
     self.displayOutput(link)
+
+  def saveHistory(self,location,link):
+
+    file=os.path.join(os.path.dirname(__file__), "history.log")
+    with open(file,'a') as f:
+      f.write('\n{0} -- Link: {1} saved on {2} at {3}'.format(location,link,time.strftime('%d/%m/%Y'),time.strftime("%H:%M")))
 
   def check(self,param):
     values=['py','pyc','pyo','pyw','rb','js','scala','hs','go','cpp','jar','lisp']

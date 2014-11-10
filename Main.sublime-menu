@@ -8,7 +8,9 @@
 {"caption":"Share Source Code",
 "command" : "share",
 
-}
+},
+{"caption":"View History",
+"command" : "open",}
     ]
 }
 ]
