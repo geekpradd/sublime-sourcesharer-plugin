@@ -1,0 +1,14 @@
+[
+{
+    "id" : "sharer",
+    "caption" : "SourceSharer",
+
+    "children":
+    [
+{"caption":"Share Source Code",
+"command" : "share",
+
+}
+    ]
+}
+]
