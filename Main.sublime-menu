@@ -9,8 +9,7 @@
 "command" : "share",
 
 },
-{"caption":"View History",
-"command" : "open",}
+
     ]
 }
 ]
