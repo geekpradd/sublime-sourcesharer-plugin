@@ -14,9 +14,14 @@ For Mac OSX, navigate to /Users/{user}/Library/Application Support/Sublime Text 
 For Linux, navigate to ~/.config/sublime-text-3 from the terminal and paste the folder in the zip there and reload Sublime Text 3.
 ##Usage
 
-To use this plugin, use the shortcut key- Ctrl+Alt+S or Click on SourceSharer in the Menu Bar and click Share Source Code
+To use this plugin, use the shortcut key- Ctrl+Alt+S or Click on Tools Option in the Menu Bar and click Share Source Code
 
 Once the plugin is started, the code of the current working file will be sent to our servers and saved in our MySQL Databases and the result link will be copied to the clipboard. To share this code with others, simply share the resultant link with others and ask them to open it in their browser of choice.
+
+##What's new in Version 1.2.0?
+
+1. Updated Codebase to support new hosting platform and updates to SourceSharer
+2. Added support for more files
 
 ##About
 

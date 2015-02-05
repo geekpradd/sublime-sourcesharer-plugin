@@ -1,7 +1,8 @@
 [
 {
-    "id" : "sharer",
-    "caption" : "SourceSharer",
+    "caption": "Tools",
+        "mnemonic": "t",
+        "id": "tools",
 
     "children":
     [
